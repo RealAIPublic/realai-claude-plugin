@@ -1,0 +1,15 @@
+{
+  "name": "realai",
+  "version": "0.0.1",
+  "description": "AI-powered residential real estate analysis",
+  "owner": {
+    "name": "RealAI Team"
+  },
+  "plugins": [
+    {
+      "name": "realai",
+      "source": "./plugins/realai",
+      "description": "AI-powered residential real estate analysis."
+    }
+  ]
+}
