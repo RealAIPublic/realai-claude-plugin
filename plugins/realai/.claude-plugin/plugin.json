@@ -1,8 +1,12 @@
 {
   "name": "realai",
-  "version": "0.0.10",
-  "description": "AI-powered residential real estate analysis",
+  "version": "1.0.0",
+  "description": "RealAI is investment-grade analysis for residential real estate.",
   "author": {
-    "name": "RealAI Team"
-  }
+    "name": "RealAI Systems, LLC",
+    "email": "contact@realai.com "
+  },
+  "homepage": "https://realai.com",
+  "repository": "https://github.com/RealAIPublic/realai-claude-plugin",
+  "license": "Apache-2.0"
 }

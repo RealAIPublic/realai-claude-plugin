@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "realai-data": {
+    "realai": {
       "type": "http",
-      "url": "https://realai-data-mcp.vercel.app/mcp"
+      "url": "https://mcp.realai.com/mcp"
     }
   }
 }

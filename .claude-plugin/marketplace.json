@@ -1,15 +1,16 @@
 {
   "name": "realai",
-  "version": "0.0.1",
-  "description": "AI-powered residential real estate analysis",
+  "version": "1.0.0",
+  "description": "RealAI is investment-grade analysis for residential real estate.",
   "owner": {
-    "name": "RealAI Team"
+    "name": "RealAI Systems, LLC",
+    "email": "contact@realai.com " 
   },
   "plugins": [
     {
       "name": "realai",
       "source": "./plugins/realai",
-      "description": "AI-powered residential real estate analysis."
+      "description": "RealAI is investment-grade analysis for residential real estate."
     }
   ]
 }

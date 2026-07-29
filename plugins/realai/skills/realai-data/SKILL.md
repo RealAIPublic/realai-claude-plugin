@@ -1,11 +1,11 @@
 ---
 name: realai-data
-description: Workflow guide for querying the RealAI Data MCP — entity resolution, schema discovery, and query construction.
+description: Workflow guide for querying the RealAI MCP — entity resolution, schema discovery, and query construction.
 ---
 
 ## Overview
 
-This skill defines how to interact with the realai-data mcp. It covers the correct call sequence, how to resolve entity names, how to discover schema, and how to construct queries.
+This skill defines how to interact with the realai mcp. It covers the correct call sequence, how to resolve entity names, how to discover schema, and how to construct queries.
 
 Use this skill when the task is about accessing data — finding entities, exploring what data exists, or building a query. For analysis built on top of that data, use the realai-analyst skill.
 
@@ -148,7 +148,7 @@ The `property` entity has 126M+ rows. An address filter alone will time out. You
 
 Start at the tightest grain. If the result count is too low, widen to the next grain up.
 
-Typical order (tightest → widest): `centum` → `neighborhood` → `zipcode`  → `census_place` → `submarket` → `county` → `market` → `state` → `nation`
+Typical order (tightest → widest): `centum` → `neighborhood` → `zipcode` → `census_place` → `submarket` → `county` → `market` → `state` → `nation`
 
 Each grain requires its own `explore_data` scope `"topics"` call since topic names may differ between entity types.
 
