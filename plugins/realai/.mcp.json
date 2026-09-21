@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "realai": {
-      "type": "http",
-      "url": "https://mcp.realai.com/mcp"
-    }
-  }
-}

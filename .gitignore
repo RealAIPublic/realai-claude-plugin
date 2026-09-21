@@ -3,6 +3,9 @@ local.mcp.json
 .claude/settings.local.json
 REVIEW.md
 
+# Private session handoff (Lou's working context — never ship or commit)
+HANDOFF.md
+
 # IDE and editor files
 .vscode/
 .idea/
@@ -20,3 +23,25 @@ __pycache__/
 # Environment variables
 .env
 .env.local
+
+# Build artifacts
+plugins/*.zip
+*.plugin
+
+# Frozen historical export of the retrieval docs — duplicates
+# plugins/realai/shared/data-retrieval/, which is the live canon.
+realai-data-retrieval/
+realai-data-retrieval.zip
+
+# Raw test-run transcripts and trackers — local evidence, not repo history
+tests/runs/
+deferred/
+tests/
+REVAMP-REVIEW.md
+SYNC.md
+upstream-lock.json
+scripts/verify_upstream.py
+CHANGELOG.md
+CLAUDE.md
+AGENTS.md
+scripts/
