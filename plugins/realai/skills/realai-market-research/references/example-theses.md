@@ -8,7 +8,7 @@ qualitative comparison without a composite or numerical forecast.
 | Thesis | Candidate evidence | Interpretation to preserve |
 |---|---|---|
 | Rental investment fundamentals | Achieved tradeouts, occupancy, days on market, job growth, rent-to-income, competing supply | High asking growth alone does not establish collectible rent growth; cash flow also requires price and expenses |
-| Cap-rate opportunity | Covered market/asset-class cap-rate history, Treasury context, demand and supply | Cap-rate expansion may reflect deterioration; a high cap rate is not automatically underpricing. Historical band analysis uses the capital-markets engine |
+| Cap-rate opportunity | Covered market/asset-class cap-rate history, Treasury context, demand and supply | Cap-rate expansion may reflect deterioration; a high cap rate is not automatically underpricing. Historical ranges describe observed conditions rather than a predicted exit cap |
 | Supply-constrained rent growth | Achieved rent growth, population or household growth, occupancy, permits relative to matching stock | Read demand and supply together; permits measure intentions and must not be described as deliveries |
 | Migration-supported demand | Net migration relative to size, inbound/outbound income and wealth differences, employment, affordability | Both volume and cohort composition matter; neither alone proves future rent growth |
 | Affordable places | Rent-to-income and value-to-income measures, income distribution, poverty and housing context | Lower ratios usually imply greater affordability; population or sample count is an eligibility consideration, not a reward for size |
@@ -34,4 +34,5 @@ finer areas, not an area-specific score that differentiates identical parent val
 
 For a composite, use the declared directions, comparable scales, common eligibility,
 and reproducible calculations in ranking.md and the shared multi-entity guidance.
-Use a numerical forecast only if projected outcomes are actually part of the question.
+Use a sourced numerical projection only if projected outcomes are part of the question;
+retain its source and vintage rather than generating missing forecasts.

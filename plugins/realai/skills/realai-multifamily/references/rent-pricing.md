@@ -71,8 +71,9 @@ review, such as no qualified activity by a specified date. Select intervals from
 leasing conditions and the user's constraints; avoid a universal cut schedule or an
 assumed rent floor.
 
-Run derived metrics in code. The parent skill's operating engine owns NOI consequences;
-its forecasting engine owns numerical forecasts or confidence bands when requested.
-Neither engine is required merely to compare current unit rents with current comps.
+Use an available non-code calculator for derived metrics under the shared output rules.
+Compare current unit rents with current comps without inventing future lease outcomes
+or confidence bands. State the costs and timing needed before interpreting gross upside
+as a possible NOI change.
 A rent-position chart or lease-expiration chart is useful when its evidence clarifies
 the decision. Keep irrelevant unavailable fields out of the answer.

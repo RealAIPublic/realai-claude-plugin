@@ -1,6 +1,6 @@
 ---
 name: realai-underwriting
-description: "Evaluate real estate transactions, value ranges, refinance or buyout pricing, development and conversion feasibility, and deal documents with RealAI. Also audit, clean, or populate a real estate underwriting model. Use for a deal, valuation, or financial-model question. Do not use for a building overview or operating diagnosis (realai-multifamily), a geography as the subject (realai-market-research), or a household profile (realai-supercensus). Individual homes and 2–4 unit residential are outside this version."
+description: "Evaluate real estate transactions, value ranges, refinance or buyout pricing, development and conversion feasibility, and deal documents with RealAI. Also review the assumptions and reported figures in a real estate underwriting model. Use for a deal, valuation, or financial-assumption question. Do not use for a building overview or operating diagnosis (realai-multifamily), a geography as the subject (realai-market-research), or a household profile (realai-supercensus). Individual homes and 2–4 unit residential are outside this version."
 license: Proprietary
 ---
 
@@ -22,8 +22,7 @@ wins if a stored reference disagrees.
 Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for conversational answers,
 useful visuals, sources, and material limitations. Read it once per conversation. The
 user's question sets the scope; loading this skill does not commission a report.
-Read `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md` when using an imported comp,
-calculation, or workbook skill; it maps the unchanged application files to this host.
+Read `${CLAUDE_PLUGIN_ROOT}/shared/comps-guidance.md` when using rental or sales comps.
 
 ## Choose the relevant guidance
 
@@ -57,26 +56,19 @@ public web sources for building economics, with supported market-grain context. 
 those sources accurately. Individual homes, condos, and 2–4 unit valuations are outside
 this version's methodology; do not apply a multifamily model to them.
 
-## Calculation authority
+## Calculations and presentation
 
-- Supported multifamily NOI, direct cap, DCF, levered returns, and development yield: read and run
-  `${CLAUDE_PLUGIN_ROOT}/engines/mf-operating-statement/SKILL.md`.
-- Numerical forecasts: read and run `${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md`.
-  Observed history and user-specified scenarios are not new statistical forecasts.
-- Auditing or creating an underwriting workbook: read
-  `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md`.
-- Cleaning or resetting a populated model for reuse: read
-  `${CLAUDE_PLUGIN_ROOT}/engines/clean-a-template/SKILL.md`. This removes prior-deal data;
-  filling a workbook uses xlsx and the supplied model structure, not the retired template filler.
+Use retrieved or supplied financial figures with their source, units, and periods.
+For arithmetic and sensitivities, follow the calculation rules in
+`${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md`. State the inputs and formula;
+use an available non-code calculator and verify the result before relying on it.
 
-Assemble calculation inputs from retrieved or supplied records, preserve units and
-periods, and act on engine errors instead of fabricating results. If inputs are
-insufficient, explain the affected conclusion and give the supported analysis.
+Discuss the assumptions, source evidence, and reported results of a supplied model.
+Workbook cleanup, population, formula auditing, and fresh model projections are outside
+this edition's built-in capabilities. Do not claim they ran or reconstruct them in prose.
+If a requested result requires unavailable tooling, explain that specific limit and
+continue with the supported evidence.
 
-For other commercial assets, represent the actual lease and cost structure in a requested
-workbook under xlsx; do not force the inputs through multifamily recipes. If a calculation
-path does not support the requested output, explain that specific limit.
-
-Use charts or sensitivity tables when they clarify what drives the result. Build a
-formal memo or workbook when requested; neither is an automatic consequence of asking
-about a deal.
+Use charts or comparison tables when they clarify what drives the result. Produce a
+requested memo or file through available host artifact tools; otherwise provide the
+answer in chat. A question about a deal does not automatically request a formal report.

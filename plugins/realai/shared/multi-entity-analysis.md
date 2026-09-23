@@ -18,9 +18,9 @@ Distinguish realized growth from a forward projection.
 
 ## Compute only the score the question needs
 
-A single-metric ranking needs a verified sort, not a composite. For a composite, calculate
-in code, preserve the inputs and derivation, and disclose components, direction, weights,
-and normalization. Use the user's weights when supplied. Otherwise choose explainable
+A single-metric ranking needs a verified sort, not a composite. For a composite, use an
+available non-code calculator, preserve the inputs and derivation, and disclose components,
+direction, weights, and normalization. Use the user's weights when supplied. Otherwise choose explainable
 weights or equal weights; identify the choice and test sensitivity if close ranks depend
 on it. A qualitative axis requires a labeled proxy or a separate qualitative comparison.
 
@@ -38,38 +38,19 @@ allowed, but do not imply it is a computed rating.
 
 ## Verify the claims
 
-Use the bundled standard-library checker on records assembled programmatically from the
-retrieved data. It fetches nothing and does not know the appropriate domain assumptions.
-
-| Check | Purpose | Arguments after `--check` |
-|---|---|---|
-| `coverage` | Detect unavailable components | `coverage records.json` |
-| `reliability` | Apply a justified sample-size floor | `reliability --field households_sample_size --min 2000 records.json` |
-| `extremum` | Verify highest/lowest, including ties | `extremum --field rent_growth --direction max --claim Raleigh records.json` |
-| `predicate` | Verify claims such as “only positive” | `predicate --field rent_growth --op gt --value 0 --claim Raleigh records.json` |
-| `buckets` | Inspect categorical distribution | `buckets --field label --expected Strong,Mixed,Weak records.json` |
-| `composite` | Weighted z-score sum, normalized to mean 50 / SD 10 | `composite --components a,b --weights 0.6,-0.4 records.json` |
-
-Run with the actual plugin path substituted by the host:
-
-```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/shared/scripts/cross_check.py" --check coverage records.json
-```
-
-The table uses illustrative field names and sample floor; select justified values for the
-actual analysis. Input is an array of records or an object containing `records`; the entity
-label defaults to `entity` (`--entity` overrides). Negative composite weight means
-lower-is-better. The composite refuses NULL and zero-variance components. Inspect error
-status rather than assuming the command succeeded.
-
 Verify superlatives against the same eligible records used in the displayed table. Scope
-“highest” to the queried population and preserve ties. The composite's top-ranked row
+“highest” to the queried population and preserve ties. A composite's top-ranked row
 establishes the top score, not superiority on every input. Retain material coverage and
 sample exclusions in the explanation without listing every unavailable field.
 
-For actual forecasts, use `${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md` and
-supported histories before ranking projected outcomes. If the runtime cannot execute a
-required scoring or verification step, do not present the result as a validated ranking.
+Check numeric ordering, matching periods, component coverage, and any stated bucket
+thresholds. Reject zero-variance normalization and missing components rather than
+producing a spurious score. If available tools cannot calculate and check a composite,
+show a comparison on the underlying measures without claiming a computed ranking.
+
+Published projections can be compared when their source, vintage, and assumptions are
+compatible. Do not generate projected outcomes to fill gaps in a ranking. Follow
+`output-conventions.md` for calculation and scenario limits.
 
 Show the comparison with a table or chart that makes differences and uncertainty legible.
 Keep methodological detail proportional to what the user needs to assess the conclusion.

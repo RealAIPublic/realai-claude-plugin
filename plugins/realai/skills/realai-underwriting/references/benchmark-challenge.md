@@ -69,9 +69,9 @@ update the dependent calculation without restarting unrelated work.
 
 ## Carry the judgment into the result
 
-Use the multifamily operating engine for the financial calculations it supports and the
-forecasting engine for new numerical forecasts, following the main skill's calculation
-rules and `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md`. Preserve asset-class limits.
+Use supported figures and available non-code calculation tools under
+`${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md`. Preserve source bases and
+asset-class differences; do not claim an unavailable model calculation was performed.
 A sensitivity uses specified alternatives; it is not a probability distribution or
 forecast merely because it has upside and downside cases.
 

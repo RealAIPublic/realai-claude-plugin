@@ -62,22 +62,19 @@ or cost overrun may remove the apparent advantage of reusing the building.
 
 ## Calculations and assumptions
 
-Apply the host mapping in `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md`.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for calculation and
+scenario limits. Review supplied cash flows and model outputs against their source
+inputs, periods, and assumptions. Simple derived measures require an available
+non-code calculator and a disclosed formula.
 
-Use `${CLAUDE_PLUGIN_ROOT}/engines/mf-operating-statement/SKILL.md` for supported multifamily
-NOI, direct-cap value, DCF, returns, and yield-on-cost calculations. Map source inputs
-and their units; read results from the engine. Select only the requested calculation.
-A commercial model must represent its actual lease and cost structure; the multifamily
-engine does not establish support for another asset class merely because fields fit.
-For a requested commercial workbook, follow
-`${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md` and validate formulas.
-If no supported calculation path exists, limit the numerical conclusion accordingly.
+A commercial analysis must reflect its actual lease and cost structure. Do not apply
+multifamily defaults to another asset class or invent an uncomputed return. If a requested
+projection needs a full financial model, explain that limit and continue with the
+supported operating, cost, and comparable evidence.
 
-Use `${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md` for new numerical forecasts.
-A user-specified growth path
-is a scenario assumption, not a statistical forecast. Historical cap-rate bands do not
-predict the exit cap: choose and disclose a supported exit assumption or show scenarios.
-Never silently default financing, occupancy, taxes, other income, or growth.
+A user-specified growth path is a scenario assumption, not a statistical forecast.
+Historical cap-rate ranges do not predict the exit cap. Never silently default financing,
+occupancy, taxes, other income, or growth.
 
 Compare modeled economics with the user's hurdle and applicable lender terms when
 available. Debt coverage depends on amortization and interest-only periods, not merely a

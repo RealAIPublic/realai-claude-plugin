@@ -59,7 +59,7 @@ the roll. Actual per-unit lease-end dates permit exact schedules; aggregate mont
 counts do not. Do not infer unit lease ends from move-in plus twelve months unless a
 clearly labeled scenario is useful and that assumption is explicitly supported.
 
-Compute monthly counts and shares in code. Useful investigation heuristics include a
+Use an available non-code calculator for monthly counts and shares. Useful investigation heuristics include a
 next-quarter expiration count at least 1.3 times the following quarter, or at least 25%
 of a floorplan expiring in one month when that floorplan has eight or more units. These
 are screening heuristics, not universal operating limits. Show counts when denominators

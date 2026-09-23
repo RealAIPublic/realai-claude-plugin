@@ -55,7 +55,7 @@ Keep asking, in-place, achieved, and concession-adjusted rents distinct. Comp-su
 current market rent is stronger evidence of achievable rent than the subject's asking
 rent alone. Compare equivalent unit types and finish levels before aggregating.
 
-For comparable occupied units, calculate in code:
+For comparable occupied units, use an available non-code calculator for:
 
 - Loss-to-lease: `(asking − in-place) / asking`; disclose the denominator and weights.
 - Current market gap: `(supported market − in-place) / supported market`.
@@ -67,8 +67,9 @@ Actual lease-end dates support capture timing; do not silently assume every leas
 12 months. Without those dates, keep timing conditional or show a labeled assumption.
 Consider achieved tradeouts, concessions, turnover costs, downtime, renewal decisions,
 and renovation completion. Separate renovation premiums from existing-condition upside.
-The operating engine owns any resulting NOI scenario; a blanket expense pass-through
-percentage cannot establish the NOI impact.
+An NOI scenario must account for incremental expenses and timing; a blanket expense
+pass-through percentage cannot establish the NOI impact. Follow the shared calculation
+rules and do not present an uncomputed financial model as a result.
 
 ## Resident evidence and attribution
 
@@ -83,7 +84,7 @@ A ratio of median rent to median income is an aggregate indicator, not the distr
 of actual household rent burdens. Show distribution or sample limitations only when they
 affect the interpretation being made.
 
-For a manager question use the directly linked PM guidance. Numerical forecasts and
-NOI/valuation scenarios use the engines linked by the parent skill. Variance bars, rent
+For a manager question use the directly linked PM guidance. Apply the parent skill's
+calculation and scenario limits. Variance bars, rent
 positioning, or a trend chart can clarify the finding; choose the evidence and visual
 that answer the question instead of filling report sections.

@@ -13,8 +13,8 @@ Companion file: `grain-coverage.md` (entity x topic matrix + required-filter qui
 | Field citations | 2026-09-18 verifier: 41 concrete citations matched; 100 wildcard/range patterns not checked. Live market credit and household fields spot-checked. |
 | Coverage observations and filter values | Historical observations unless explicitly updated below; recheck live for the current question. Schema verification does not verify population or observation dates. |
 
-Re-verify with `python3 scripts/verify_catalog.py` before relying on this file after a
-semantic-layer release.
+Recheck topic and field definitions with live MCP discovery after a semantic-layer
+release; use the definitions exposed by the current connection.
 
 ## Table of contents
 

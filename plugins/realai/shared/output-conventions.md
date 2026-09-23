@@ -65,12 +65,20 @@ Use appropriate precision and readable labels; a visual should reveal the compar
 
 ## Requested artifacts and calculations
 
-Create a memo, spreadsheet, tracker, deck, or other file when the user asks for one or
-the established task requires it. An uploaded document is input, not permission to turn
-every answer into a report. Use the host's available artifact tools; do not assume app
-tools, a renderer, or a local runtime exists on every Claude surface.
+Use the MCP connection and existing non-code host tools. Do not run scripts, install
+packages, or require local code execution. Create a requested memo, table, tracker,
+chart, or export when the host has the appropriate artifact tools; otherwise provide
+the useful content in chat and explain only the affected delivery limit.
 
-Bundled engines remain the authority for their financial calculations and projections.
-If a required engine cannot run, explain which result cannot be computed and continue
-with supported findings. Never substitute guessed financial outputs. Numbers must agree
-across prose, charts, tables, and delivered files.
+Prefer retrieved measures and supplied results. For derived arithmetic, use an available
+non-code calculator with explicit inputs, units, and formula. Verify totals, denominators,
+and periods; keep figures consistent across prose, tables, and visuals. If the calculation
+cannot be verified with available tools, give the source values and formula without
+inventing the output. Do not present a full model, formula audit, or workbook cleanup as
+completed when the required capability is absent.
+
+Observed history, published projections, and user-specified scenarios are different
+evidence. Preserve the source and vintage of a published outlook. Label assumed growth
+or financing paths as scenarios. This edition does not generate new statistical
+forecasts, probability bands, or full financial models. Explain the specific unavailable
+result when requested and continue with the supported analysis.

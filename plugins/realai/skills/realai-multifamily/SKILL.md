@@ -22,8 +22,7 @@ wins if a stored reference disagrees.
 Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for conversational answers,
 useful visuals, sources, and material limitations. Read it once per conversation. The
 user's question sets the scope; loading this skill does not commission a report.
-Read `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md` when using an imported comp,
-calculation, or workbook skill; it maps the unchanged application files to this host.
+Read `${CLAUDE_PLUGIN_ROOT}/shared/comps-guidance.md` when using rental or sales comps.
 
 ## Choose the relevant guidance
 
@@ -33,7 +32,7 @@ calculation, or workbook skill; it maps the unchanged application files to this 
 | Property-manager performance or comparisons | [pm-assessment.md](references/pm-assessment.md) |
 | Unit-level asking rents or renewals | [rent-pricing.md](references/rent-pricing.md) |
 | Mapping uploaded PM reports | [report-mapping.md](references/report-mapping.md) |
-| Calculating unit pricing recommendations | [pricing-engine.md](references/pricing-engine.md) |
+| Calculating unit pricing recommendations | [pricing-calculations.md](references/pricing-calculations.md) |
 | A requested pricing tracker | [action-tracker.md](references/action-tracker.md) |
 | Rental comparables | [shared rental-comps](../../shared/rental-comps/SKILL.md) |
 | Transaction comparables | [shared sales-comps](../../shared/sales-comps/SKILL.md) |
@@ -61,14 +60,13 @@ identify what the unit decision needs. For conflicting documents, read
 `${CLAUDE_PLUGIN_ROOT}/shared/document-reconciliation.md`. For rankings, composites, or
 broad peer comparisons, read `${CLAUDE_PLUGIN_ROOT}/shared/multi-entity-analysis.md`.
 
-## Calculations and artifacts, when needed
+## Calculations and presentation
 
-Use code for derived operating comparisons. For an NOI waterfall or financial model,
-read `${CLAUDE_PLUGIN_ROOT}/engines/mf-operating-statement/SKILL.md`; for numerical forecasts, read
-`${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md`. Run the relevant bundled engine,
-not a substitute calculation in prose.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for arithmetic, scenarios,
+and requested files. Base derived operating comparisons on consistent source records.
+Keep gross rent opportunity separate from NOI and actual results separate from assumptions.
 
-Read `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md` for a requested workbook or
-tracker. Pricing recommendations can be presented in a usable table without automatically
-building a spreadsheet. Variance bars, trend lines, and comp-positioning charts often
-make the operating answer clearer.
+Pricing recommendations and action trackers can be presented in a usable table. Use
+available host artifact tools for requested files; do not promise model construction or
+workbook validation. Variance bars, trend lines, and comp-positioning charts can make
+the operating answer clearer.

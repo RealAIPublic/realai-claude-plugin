@@ -45,7 +45,7 @@ cohort fields need particular care: inbound age describes arrivals; outbound age
 departures; origin/destination IDs are identifiers, not scores. The documented mobility
 score reads higher as more stable residents, so confirm its meaning before inverting it.
 
-Compute composites in code and retain component contributions. Inspect close ranks for
+Use an available non-code calculator for composites and retain component contributions. Inspect close ranks for
 sensitivity to assumed weights. A winning composite does not mean a place leads on each
 input. Missing components require the common eligibility treatment in the shared guide;
 never turn NULLs into zero or silently change weights for individual places.
@@ -70,8 +70,8 @@ unused NULL column does not belong in the comparison.
 
 “Fastest-growing last year” needs observed growth. “Best rental markets” may be answered
 from current fundamentals without forecasting every candidate. Use numerical forecasts
-only when projected outcomes are part of the requested criteria, following the engine
-contract linked from SKILL.md. Preserve confidence differences in the interpretation.
+from identified sources only when projected outcomes are part of the requested criteria.
+Preserve vintage and confidence differences; do not generate missing projected outcomes.
 Capital-market band positioning is a historical comparison, not a future cap-rate value.
 
 Make the result easy to compare: sorted bars or a table for candidates, a scatterplot for

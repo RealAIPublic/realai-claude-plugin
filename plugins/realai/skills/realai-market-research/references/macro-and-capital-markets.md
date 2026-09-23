@@ -34,15 +34,14 @@ For rate direction, choose the historical window that answers the question. Comp
 compatible observation dates rather than juxtaposing a stale quarterly cap rate and a
 current daily Treasury quote as if simultaneous.
 
-Compute spreads and changes in code, preserving units. A cap-rate minus Treasury spread
+Use an available non-code calculator for spreads and changes, preserving units. A cap-rate minus Treasury spread
 is a simple relative-yield indicator; it is not a complete measure of property risk or a
 property valuation. Nominal Treasury yield minus the matching inflation breakeven is an
 approximate real-yield proxy, not an observed TIPS yield.
 
-Use the forecasting contract linked from SKILL.md when a historical band analysis is
-needed. Its `capital_markets` family computes band positioning and rate signals; it
-projects no future cap-rate value. A question about whether rates rose over an observed
-period does not require that engine.
+A historical range describes the observed window, not a predicted cap rate. Use source
+statistics or an available non-code calculator for derived comparisons. Do not label an
+observed range as a probability band or an implied future path.
 
 ## Connect macro conditions to the user's subject
 
@@ -51,13 +50,13 @@ rent context; employment affects demand; starts and permits inform future supply
 Explain only the links supported by the evidence. National conditions supply context
 for local performance and do not replace local observations.
 
-For a transaction's debt service, returns, or operating projection, use the operating
-contract through realai-underwriting. Do not turn indicative program terms into a
-computed deal result without the required inputs and engine.
+For a transaction's financing assumptions or supplied model results, use
+realai-underwriting. Do not turn indicative program terms into a computed deal result
+without the necessary inputs and a supported calculation tool.
 
 Published projection topics carry their source's outlook, not a new RealAI forecast.
-Keep the projection vintage visible. Further computed forecasts use the forecasting
-contract; unsupported numerical paths are not a substitute for unavailable history.
+Keep the projection vintage visible. This edition interprets those sourced outlooks;
+it does not generate an additional statistical forecast or fill unavailable history.
 
 A dated rate comparison table or aligned time-series chart can clarify a spread or
 turning point. Use public research for breaking policy, central-bank commentary, or

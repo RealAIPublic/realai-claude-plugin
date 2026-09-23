@@ -1,13 +1,13 @@
 # A requested unit-action tracker
 
-Use this reference when the user asks for a pricing tracker, workbook, or reusable unit
-worklist. Recommendations can otherwise stay in chat. Adapt the workbook to the user's
-existing process or supplied template instead of imposing a fixed report format.
+Use this reference when the user asks for a pricing tracker or reusable unit worklist.
+Recommendations can otherwise stay in chat. Adapt the worklist to the user's existing
+process instead of imposing a fixed report format.
 
-Before creating the artifact, read `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md` for
-host invocation, then use `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md` for workbook
-construction and validation. Use the same calculated records for the workbook, any chart,
-and the explanation so their units, dates, rents, and totals agree.
+Present the worklist as a table. For a requested file, follow
+`${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` and use an available host artifact
+tool. Do not claim workbook construction or formula validation without the relevant
+capability. Use the same verified records for the table, charts, and explanation.
 
 ## Make the worklist usable
 
@@ -49,19 +49,17 @@ state which, and keep unlike measures separate.
 
 ## Presentation and verification
 
-Keep primary actions visible and supporting detail easy to inspect. Freeze headers,
-use readable currency/date formats, wrap notes, and avoid clipping. Optional column
-outlines can group secondary detail, but essential instructions must remain visible.
-If a format relies on a feature the user's viewer may not expose, ensure the information
-is still accessible without it.
+Keep primary actions visible and supporting detail easy to inspect. Use readable
+currency/date formats and concise notes. In a file produced by an available host tool,
+check that the viewer displays the important rows and values clearly.
 
 A ranked action chart, rent-position comparison, or monthly expiration chart can help
 when it reveals a decision. Build chart records from the same unit table and identify
 cohorts honestly. A cohort count cannot be represented by an invented unit. Label scenario
 or estimated data rather than imply observed precision; skip charts that add no insight.
 
-Validate identifier uniqueness, row populations, formulas, dates, totals, filters, and
-any collapsed-detail behavior before delivery. Do not embed unnecessary resident names,
+Check identifier uniqueness, row populations, dates, totals, and the displayed scope
+before delivery. A worklist review does not establish workbook formula integrity. Do not embed unnecessary resident names,
 contact details, or payment information in a shareable operating worklist.
 
 ## Updating a prior tracker
@@ -71,4 +69,4 @@ identifiers and matched rent/period definitions. Useful changes include newly le
 units, revised pricing evidence, upcoming expirations, and verified actions completed.
 A changed observation does not prove an operator followed or ignored a recommendation;
 use execution evidence before claiming either. Preserve the prior version or identify
-the revision clearly, and explain material changes without restating the whole workbook.
+the revision clearly, and explain material changes without restating the whole worklist.

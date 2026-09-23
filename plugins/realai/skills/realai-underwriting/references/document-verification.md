@@ -26,7 +26,7 @@ Compare actuals with actuals and identify when a difference is a planned future 
 | Rent or sale comps | Verify the quoted transaction or rent, terms, date, product, size, and condition; investigate material omitted alternatives and selection bias. |
 | Development budget | Check scope, overlapping allowances, omitted carry or lease-up costs, cost basis, timing, contingency, and support for incentives. |
 | Appraisal or specialist report | Check effective date, scope, assumptions, exclusions, and whether the cited conclusion actually answers the claim. |
-| Financial workbook | Use the xlsx guidance to inspect formulas, references, timing, and consistency of reported outputs. |
+| Supplied financial-model figures | Compare accessible inputs and reported outputs, dates, and assumptions. Value-only extracts do not verify formulas or the workbook as a whole. |
 
 For multifamily, compare the relevant operating measures with like-for-like benchmarks.
 RealAI financials can be modeled annual estimates; never relabel them as a verified T12.
@@ -68,12 +68,10 @@ or recurring review theme is not a proven operational fact.
 
 ## Quantify only the requested implications
 
-Use `${CLAUDE_PLUGIN_ROOT}/engines/mf-operating-statement/SKILL.md` for supported
-multifamily NOI adjustments, valuation, and sensitivity calculations. The engine does
-not verify inputs; supply the reconciled basis and read its actual outputs. For workbook
-analysis or edits, use `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md` and the host mapping
-in `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md`. Do not bypass a failed calculation
-or force a commercial asset through multifamily recipes.
+Use the reconciled source figures and follow
+`${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for derived arithmetic. A calculation
+does not verify its inputs. Limit claims to accessible evidence; do not claim a workbook
+formula audit, recalculation, or modification from a document excerpt or value-only table.
 
 Recompute value or debt coverage when the user asks for that implication or it is needed
 to explain a material finding. Use applicable financing terms and lender requirements;

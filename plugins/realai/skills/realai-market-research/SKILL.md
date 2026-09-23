@@ -22,8 +22,6 @@ wins if a stored reference disagrees.
 Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for conversational answers,
 useful visuals, sources, and material limitations. Read it once per conversation. The
 user's question sets the scope; loading this skill does not commission a report.
-Read `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md` when using an imported comp,
-calculation, or workbook skill; it maps the unchanged application files to this host.
 
 ## Choose the relevant guidance
 
@@ -58,13 +56,12 @@ Commercial-sector context exists at market grain, not for individual commercial 
 Geographic home-value and SFR-rent questions belong here; individual home valuations are
 outside this version's coverage. A multifamily building overview belongs to realai-multifamily.
 
-## Calculations and artifacts, when needed
+## Calculations and presentation
 
-For an actual numerical forecast, read
-`${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md` and run the bundled engine with
-retrieved history. A question about observed trends does not require a forecast. Do not
-invent history or future values when evidence or runtime is unavailable.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for derived measures and
+requested artifacts. Use observed history for trends. A published projection retrieved
+from the MCP retains its source and vintage; a user-specified growth path is a scenario
+assumption. Do not generate a new statistical forecast or confidence band in this edition.
 
-For a requested spreadsheet, read `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md`.
 Show trends, comparisons, and tradeoffs visually when helpful using the host's available
-tools; an inline chart does not require an Excel deliverable.
+non-code tools. A chart or comparison table does not require an Excel deliverable.

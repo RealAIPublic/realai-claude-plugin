@@ -46,7 +46,7 @@ cross-sectional snapshot is available.
 
 ## Metrics and contract checks
 
-Compute comparisons in code with consistent units and periods. Percentage-point changes
+Use an available non-code calculator for comparisons with consistent units and periods. Percentage-point changes
 and percentage changes answer different questions. Distinguish listing-to-signing time,
 physical vacancy days, and turnover-ready time; they are not interchangeable proxies.
 Retention denominators and observation windows must match before comparing rates.
@@ -58,7 +58,7 @@ only when supported by current comparable evidence; crossing a generic threshold
 establish overpayment or justify replacement.
 
 If the user requests an improvement scenario, explain the operational assumptions and
-cost of achieving it. The operating engine owns NOI and valuation calculations. Closing
+cost of achieving it. Follow the shared calculation rules for any derived values. Closing
 a peer gap is an illustrative scenario, not measured manager-created value. Include
 implementation costs and potential service or occupancy effects when material.
 

@@ -17,7 +17,7 @@ snapshot/history for SFR questions; compare segments explicitly when both are re
 Retrieve household credit or liquidity evidence when affordability is consequential,
 rather than adding it to every rent answer.
 
-Compute derived measures in code from sourced values, with compatible units and periods:
+Use an available non-code calculator for derived measures from sourced values, with compatible units and periods:
 
 | Measure | Interpretation and calculation |
 |---|---|
@@ -78,12 +78,10 @@ Use strategy-calibration.md when acquisition, value-add, development, SFR, or BT
 which evidence matters. Apply a common strategy and compatible dates across named places.
 Do not convert a comparison into a ranked scorecard based on the number of places.
 
-For numerical forecasts, use the forecasting contract linked from SKILL.md: rents and
-occupancy use `rent_or_occupancy`; population or employment counts use `demographic`;
-dollar-valued income or home-value series use `generic`; capital-market band analysis uses
-`capital_markets` and projects no cap-rate value. Supply real history and required context
-signals; never manufacture a series from snapshot change fields. Without sufficient
-history, distinguish a supported qualitative outlook from an unavailable computed forecast.
+Use historical observations to describe trends and current conditions to explain a
+qualitative outlook. A published projection retains its source and date. Do not generate
+a fresh statistical forecast, synthetic history, or probability band from snapshot
+change fields. Follow the shared output rules for user-specified scenarios.
 
 A chart of asking, in-place, and signed-lease evidence can clarify a rent story. Supply
 bars or aligned inbound/outbound comparisons can expose the relevant driver. Use the

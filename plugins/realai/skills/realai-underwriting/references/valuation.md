@@ -62,22 +62,17 @@ alone does not establish confidence.
   ownership-interest transfers, and asset sales can have different consequences; do not
   assume any category is universally exempt from reassessment.
 
-## Calculate using the supported authority
+## Calculate only supported measures
 
-Apply the host mapping in `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md`.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md`. Use the supplied model
+outputs or available non-code calculation tools, retaining their input basis. A direct-cap
+comparison requires supported NOI and cap-rate assumptions; explain the formula and
+verify arithmetic. A chosen exit cap or growth path remains an assumption.
 
-For multifamily, use `${CLAUDE_PLUGIN_ROOT}/engines/mf-operating-statement/SKILL.md` for NOI,
-projection, direct cap, and DCF. Preserve source basis and use only its supported outputs.
-Use `${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md` for numerical forecasts;
-a chosen exit cap or user growth
-scenario remains an assumption, not an engine prediction. Act on errors and unsupported
-inputs instead of estimating engine results in prose.
-
-For a requested commercial workbook, use `${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md`
-to build or audit formulas
-that reflect the property's economics. Do not force commercial inputs through multifamily
-defaults. Where a method has no supported computational path, discuss its evidence and
-limits without inventing a numerical output or commissioning an unrequested workbook.
+A DCF or leveraged return requires a complete cash-flow model. This edition can review
+the evidence and assumptions behind supplied results, but does not construct or validate
+that model. Where the requested method cannot be calculated, explain its evidence and
+limits without inventing a numerical output.
 
 ## Reconcile and communicate
 

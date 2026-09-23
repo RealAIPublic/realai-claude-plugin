@@ -50,7 +50,7 @@ A line chart can reveal a turning point; a small comparison table can show wheth
 apparent outlier remains unusual against an appropriate benchmark. Use a map when spatial
 relationships matter and the host can render reliable geographic data.
 
-Observed trends do not require numerical forecasts. If the question needs future values,
-use the forecasting contract linked from SKILL.md. Do not reconstruct synthetic histories
-from snapshot back-values to make an engine run. Omit unused NULL fields and explain an
+Observed trends do not require numerical forecasts. For an outlook, use sourced
+projections when available or explain supported drivers qualitatively. Do not manufacture
+future values or confidence bands. Omit unused NULL fields and explain an
 unavailable measure only when it was requested or changes the conclusion.

@@ -22,8 +22,6 @@ wins if a stored reference disagrees.
 Follow `${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for conversational answers,
 useful visuals, sources, and material limitations. Read it once per conversation. The
 user's question sets the scope; loading this skill does not commission a report.
-Read `${CLAUDE_PLUGIN_ROOT}/shared/infrastructure.md` when using an imported comp,
-calculation, or workbook skill; it maps the unchanged application files to this host.
 
 ## Choose the relevant guidance
 
@@ -59,7 +57,6 @@ comparison, and keep units, periods, and benchmarks visible.
 
 For rankings or composites, read `${CLAUDE_PLUGIN_ROOT}/shared/multi-entity-analysis.md`.
 For wider economic interpretation, read `${CLAUDE_PLUGIN_ROOT}/shared/interpretation-guide.md`.
-If the user asks for a numerical projection, read
-`${CLAUDE_PLUGIN_ROOT}/engines/forecasting/SKILL.md`; run it only with a supported
-history. For a requested data workbook, read
-`${CLAUDE_PLUGIN_ROOT}/engines/xlsx/SKILL.md`.
+Use observed history or a sourced projection when available. Follow
+`${CLAUDE_PLUGIN_ROOT}/shared/output-conventions.md` for arithmetic and requested exports.
+Do not turn household trends into a new numerical forecast or invented confidence band.

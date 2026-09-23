@@ -1,9 +1,9 @@
 # Unit pricing calculations and decision checks
 
-This reference defines calculation and interpretation rules, not an executable engine.
-Run arithmetic in code using the normalized subject records and supported comparisons.
-Apply only calculations relevant to the requested units. Use the parent skill's shared
-infrastructure guidance before invoking the authoritative NOI or forecasting engines.
+Use normalized subject records and supported comparisons for unit pricing. Apply only
+calculations relevant to the requested units, using the available non-code calculator
+and the shared output rules. If the required arithmetic cannot be verified, show the
+source values and formula without inventing a result.
 
 ## Comparable rent basis
 
@@ -48,9 +48,9 @@ leave the action-dependent timing unresolved rather than invent a date.
 
 The full-year run rate of leases rolling within six months is not six-month realized
 revenue. A capture scenario needs actual timing, renewal or turnover outcomes, concessions,
-downtime, and implementation costs. Do not label gross upside as NOI; operating-engine
-inputs must reflect incremental costs rather than apply an average expense ratio as a
-marginal pass-through. Numerical forecasts use the forecasting engine when needed.
+downtime, and implementation costs. Do not label gross upside as NOI. A supported
+scenario must reflect incremental costs rather than apply an average expense ratio as a
+marginal pass-through. An assumed capture path is not a forecast or probability estimate.
 
 ## Unit decisions
 
