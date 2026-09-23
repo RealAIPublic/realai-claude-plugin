@@ -1,16 +1,16 @@
 {
   "name": "realai",
   "version": "1.0.0",
-  "description": "RealAI is investment-grade analysis for residential real estate.",
+  "description": "RealAI is investment-grade real estate analysis: multifamily buildings, CRE underwriting, market research, and household insights.",
   "owner": {
     "name": "RealAI Systems, LLC",
-    "email": "contact@realai.com " 
+    "email": "contact@realai.com"
   },
   "plugins": [
     {
       "name": "realai",
       "source": "./plugins/realai",
-      "description": "RealAI is investment-grade analysis for residential real estate."
+      "description": "RealAI is investment-grade real estate analysis: multifamily buildings, CRE underwriting, market research, and household insights."
     }
   ]
 }
